@@ -1,0 +1,102 @@
+
+body{
+    margin: 0px;
+}
+
+.navbar{
+    background-image: url(wood.png);
+    height: 60px;
+    box-shadow: inset 0px -10px 10px rgba(255,255,255,0.5);
+}
+
+.drawertitle {
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  font-size: 25px;
+  border: none;
+  transition: 0.3s;
+  text-shadow: 1px 1px #00000088;
+  
+}
+
+.desk {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  margin-left: 50px;
+
+}
+
+.drawer {
+  width: 100%;
+  display: block;
+  position: absolute;
+  background-color: transparent;
+  top: -72px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: -1;
+  
+  
+  border-radius: 0px 0px 10px 10px;
+  transition: 0.3s;
+  box-shadow: inset 0px -3px 10px rgba(255,255,255,0.5);
+}
+
+.drawer-box{
+    display: block;
+    background-image: url(wood.png);
+    padding-bottom: 15px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: inset 0px -3px 10px rgba(255,255,255,0.5);
+}
+.drawer-box a {
+    font-family: sans-serif;
+  color: white;
+  padding: 12px 0px;
+  text-decoration: none;
+  display: block;
+  width: 170px;
+  height: 20px;
+  background-color: transparent;
+  
+}
+.shad{
+    margin: auto;
+    width: 170px;
+    background-color: rgb(160, 90, 58,1);
+    box-shadow: inset 0px 0px 5px #000;
+}
+
+.handle{
+    z-index: -2;
+    width: 20%;
+    height: 10px;
+    border: solid 10px rgb(99, 41, 41);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top:-10px;
+    border-radius: 10px;
+    
+}
+
+.drawer-box a:hover {
+    
+    color: black;
+}
+
+
+.desk:hover .drawer {
+    display: block;
+    top: 60px;
+
+}
+
+
+.desk:hover .drawertitle {
+    background-color: transparent;
+    text-shadow: 3px 3px 3px #00000088;
+}
