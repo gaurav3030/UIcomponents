@@ -1,0 +1,125 @@
+body{
+    margin: 0px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px;
+    border: solid 2px #aaa;
+    height: 120px;
+    
+    padding: 0 15px 0 15px;
+    
+}
+.searchtext{
+    width: 300px;
+    border: none;
+    background-color: transparent;
+    height: 100px;
+    
+
+    
+}
+
+button{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border: none;
+    background-color: transparent;
+    padding: 0px;
+}
+
+.searchcircle{
+    position: relative;
+    top: -10px;
+    width: 40px;
+    height: 40px;
+    
+    border: 15px solid blue;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+button span{
+    position: absolute;
+    background-color:transparent;
+    top: 70px;
+    left:45px;
+    height: 15px;
+    width: 40px;
+    display: block;
+    border-radius: 15px;
+    transform:rotateZ(52deg) ;
+    transition: 0.3s;
+
+}
+button span:before{
+    content: '';
+    position: absolute;
+    background-color:blue;
+    
+    height: 15px;
+    width: 40px;
+    display: block;
+    border-radius: 15px;
+    
+    transition: 0.3s;
+
+}
+button span:after{
+    content: '';
+    position: absolute;
+    background-color:red;
+    opacity: 0;
+    top: 0px;
+    left: 0px;
+    height: 15px;
+    width: 40px;
+    display: block;
+    border-radius: 15px;
+    transform:rotateZ(83deg);
+
+}
+button:hover .searchcircle{
+    width: 0px;
+    height: 0px;
+    border-width: 50px;
+    top: 0px;
+    
+
+}
+button:hover span{
+    background-color: transparent;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    transform: translateX(-50%) translateY(-50%) rotateZ(0deg);
+   
+
+}
+button:hover span:after{
+    background-color: white;
+    
+    width: 60px;
+    transform: rotateZ(45deg);
+   opacity: 1;
+
+}
+button:hover span:before{
+    background-color: white;
+    
+    width: 60px;
+    transform:rotateZ(135deg);
+   opacity: 1;
+
+}
+
+
+
+
