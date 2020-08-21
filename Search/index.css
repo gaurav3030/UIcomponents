@@ -12,20 +12,31 @@ body{
     border-radius: 60px;
     border: solid 2px #aaa;
     height: 120px;
+    box-shadow: 5px 5px 10px #999,
+    inset 5px 5px 10px #aaa;
     
     padding: 0 15px 0 15px;
     
 }
 .searchtext{
-    width: 300px;
+    
+    width: 0px;
     border: none;
     background-color: transparent;
     height: 100px;
+    outline: none;
+    font-size: 40px;
+    transition:0.3s;
     
 
     
 }
-
+.searchtext::placeholder{
+    color: #ccc;
+}
+.searchexpand{
+    width: 300px;
+}
 button{
     position: relative;
     width: 100px;
@@ -34,6 +45,8 @@ button{
     border: none;
     background-color: transparent;
     padding: 0px;
+    outline: none;
+
 }
 
 .searchcircle{
@@ -75,7 +88,7 @@ button span:before{
 button span:after{
     content: '';
     position: absolute;
-    background-color:red;
+    background-color:white;
     opacity: 0;
     top: 0px;
     left: 0px;
@@ -86,7 +99,7 @@ button span:after{
     transform:rotateZ(83deg);
 
 }
-button:hover .searchcircle{
+.fill{
     width: 0px;
     height: 0px;
     border-width: 50px;
@@ -94,16 +107,18 @@ button:hover .searchcircle{
     
 
 }
-button:hover span{
+.searchcross{
     background-color: transparent;
     top: 50%;
     left: 50%;
     width: 60px;
     transform: translateX(-50%) translateY(-50%) rotateZ(0deg);
+
+    
    
 
 }
-button:hover span:after{
+.searchcross:after{
     background-color: white;
     
     width: 60px;
@@ -111,7 +126,7 @@ button:hover span:after{
    opacity: 1;
 
 }
-button:hover span:before{
+.searchcross:before{
     background-color: white;
     
     width: 60px;
@@ -119,6 +134,7 @@ button:hover span:before{
    opacity: 1;
 
 }
+
 
 
 
