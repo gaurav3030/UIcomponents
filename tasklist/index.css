@@ -1,0 +1,121 @@
+body{
+    margin: 0px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 5px #000;
+    overflow-x: hidden;
+    
+}
+.container{
+    height: 90vh;
+}
+.card{
+    position: relative;
+    left: 0px;
+    margin: 20px 0;
+    border-radius: 20px;
+    width: auto;
+    padding: 20px;
+    display: flex;
+    background-color: #ededed;
+    box-shadow: 3px 3px 5px #656565;
+    align-items: center; 
+    
+    transition: left 0.3s;
+     
+}
+.card:hover{
+    position: relative;
+    left: 2.5vw;
+    box-shadow: -6px 12px 5px #656565;
+    transition: 0.3s;
+}
+.photo{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 20px;
+    overflow-y: hidden visible;
+}
+.content{
+    position: relative;
+    top: -15px;
+    background-color: transparent;
+    border-radius: 0 0 30px 30px;
+    overflow: hidden;
+
+
+}
+.content img{
+    max-width:100%;
+    position: relative;
+    top: 5px;
+    
+    
+}
+.message{
+    display: inline-block;
+    width: 40vw;
+    height: 60px;
+}
+.checkbox{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1.5px solid #bcbcbc;
+    border-radius: 20%;
+    background: #f9f9f9;
+    
+}
+.message h3{
+    font-family: sans-serif;
+    color: #656565;
+}
+.checkbox::after{
+    content: '';
+    display: none;
+    position: relative;
+    height: 10px;
+    width: 20px;
+    background-color: #17B623;
+    border-radius: 200% 40% 45% 40%;
+    transform: rotateZ(45deg);
+    top: 10px;
+    left: 0px;
+    transition: 0.2s;
+
+
+}
+.checkbox::before{
+    content: '';
+    display: none;
+    position: relative;
+    height: 10px;
+    width: 40px;
+    background-color: #17B623;
+    transform: rotateZ(135deg);
+    border-radius:  30% 40%  200% 400%;
+    left: 6px;
+    top: 11px;
+    transition: 0.2s;
+
+}
+
+.checked::after{
+    top: 5px;
+    left: -10px;
+    height: 15px;
+    width: 30px;
+}
+.checked::before{
+    left: 0px;
+    height: 15px;
+    width: 60px;
+}
+.checkeddisplay::after,  .checkeddisplay::before{
+    display: block;
+}
