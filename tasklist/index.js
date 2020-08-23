@@ -11,7 +11,7 @@ document.querySelectorAll(".checkbox").forEach(item =>{
         function remove(){
             item.parentElement.style.left = "50vw";
         }
-        setTimeout(remove, 150);
+        setTimeout(remove, 300);
         function fade(){
             item.parentElement.style.display = "none";
         }
