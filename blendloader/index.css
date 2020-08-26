@@ -1,0 +1,26 @@
+body{
+    height: 100vh;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    height: 200px;
+    width: 200px;
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.startcolor{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background: blue;
+    border-radius: 50%;
+    top:0;
+    
+
+}
