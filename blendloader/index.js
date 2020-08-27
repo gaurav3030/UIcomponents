@@ -1,4 +1,20 @@
 
+// var slider = document.getElementById("myRange");
+// var box = document.querySelector('.box');
+// var boxp = document.querySelector('.box p');
+
+
+
+// // Range slider function
+// slider.oninput = function(){
+//     var x = this.value;
+    
+//     box.style.left = this.value + "%";
+//     boxp.textContent = this.value;
+//     slider.style.background = "-webkit-linear-gradient(left,rgb(var(--blue-crayola)) "+x+"%, rgba(var(--rich-black-fogra-29),0.2) "+x+"%)";
+// }
+
+
 
 
 var r = 75;
@@ -18,13 +34,3 @@ tl.to(button,{ duration: .5, ease: "sine.out", y:0},"<")
 });
 
 
-// var tl = gsap.timeline({repeat:-1});
-
-// tl.to(".startcolor",{ duration: .5, ease: "sine.out",x:r})
-// tl.to(".startcolor",{ duration: .5, ease: "sine.in", y:r},"<")
-// tl.to(".startcolor",{ duration: .5, ease: "sine.in",x:0})
-// tl.to(".startcolor",{ duration: .5, ease: "sine.out", y:2*r},"<")
-// tl.to(".startcolor",{ duration: .5, ease: "sine.out",x:-1*r})
-// tl.to(".startcolor",{ duration: .5, ease: "sine.in", y:r},"<")
-// tl.to(".startcolor",{ duration: .5, ease: "sine.in",x:0})
-// tl.to(".startcolor",{ duration: .5, ease: "sine.out", y:0},"<")
