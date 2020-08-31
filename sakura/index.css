@@ -1,0 +1,75 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.container{
+    position: relative;
+    height: 100%;
+    width: 150vh;
+    background-color: aquamarine;
+    top: 0px;
+    left: 0px;
+    
+}
+
+
+.tree{
+    bottom: 0px;
+    position: absolute;
+    height: 60vh;
+    width: 60%;
+    filter: blur(15px);
+    z-index: 1;
+    
+}
+.trunks{
+    position: absolute;
+    height: 15vh;
+    width: 50%;
+    background-color: #161733 ;
+    top: 25%;
+    z-index: 1;
+    transform: rotateZ(-30deg) ;
+}
+
+
+.ground{
+    bottom: 0px;
+    position: absolute;
+    height: 40vh;
+    width: 100%;
+    filter: blur(15px);
+    background-color: #ecdc67;  
+}
+.field{
+    bottom: 0px;
+    position: absolute;
+    height: 40vh;
+    width: 100%;
+    clip-path: polygon(60% 0%, 100% 0, 100% 100%, 74% 100%);
+    background-color: #96dd1c;
+    
+}
+.road{
+    bottom: 0px;
+    position: absolute;
+    height: 40vh;
+    width: 100%;
+    clip-path: polygon(34% 0%, 54% 0, 61% 100%, 17% 100%);
+    background-color: #c8d9c9;
+}
+.roadleft{
+    bottom: 0px;
+    position: absolute;
+    height: 40vh;
+    width: 100%;
+    background-color:#2a5856;
+    clip-path: polygon(0 0, 34% 0, 17% 100%, 0 100%);
+}
