@@ -10,8 +10,9 @@ body{
     position: relative;
     background-color: transparent;
     height: 90vh;
-    transition: 0.3s;
+    transition: all 0.3s ;
     width: 54vh;
+    transform: scale(2);
 }
 .upperdex{
     position: relative;
@@ -112,13 +113,16 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .pokedex:hover .screen{
     height: 36vh;
+    
 }
 .pokedex:hover{
     height: 58.5vh;
+    transform: scale(1);
 }
 
 
@@ -130,6 +134,9 @@ body{
     background-color: transparent;
     display: flex;
     justify-content: center;
+}
+.pokedex:hover .pokecontent{
+    display: none;
 }
 
 .topcontent{
@@ -162,7 +169,7 @@ body{
     width: 50vh;
     height: 13vh;
     bottom: 0;
-    background-color: rgb(209, 209, 209);
+    background-color: transparent;
 }
 
 .pokephoto img{
@@ -253,4 +260,26 @@ body{
     border: 1px solid black;
     border-radius: 10px;
     box-shadow: inset 0px 0px 1px 1px #fff ;
+    
+}
+.pokeinfo p{
+    position: absolute;
+    z-index: 1;
+    padding: 10px 15px;
+    font-size: 0.8em;
+}
+.infoleft{
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    background: linear-gradient(180deg, rgb(240, 240, 240) 30%, rgb(180, 180, 180)); 
+    border-radius: 0px 20px 0 0 ;
+}
+.inforight{
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    background: linear-gradient(180deg, rgb(240, 240, 240) 30%, rgb(180, 180, 180)); 
+    left: 45%;
+    border-radius: 20px 0 0 0 ;
 }
