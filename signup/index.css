@@ -1,0 +1,85 @@
+body{
+    height: 100vh;
+    display: flex;
+    margin: 0px;
+    justify-content: center;
+    background-color: #5da9ff;
+
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #eeeeee;
+    opacity: 1; /* Firefox */
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #eeeeee;
+}
+
+.btncontainer{
+    height: 140px;
+    width: 200px;
+    background-color: #147DF3;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60%;
+    top:-70px;
+    
+}
+.buttontext{
+    
+    font-family: sans-serif;
+    position: relative;
+    color: white;
+    font-size: 20px;
+    padding: 25px 0;
+    top: 25%;
+
+}
+
+.formcontainer{
+    height: 50vh;
+    font-family: sans-serif;
+    position: relative;
+    display: none;
+    font-size: 20px;
+    width: 50vw;
+    top: 25%;
+}
+.signupform{
+    width: 100%;
+    text-align: center;
+}
+.signupform input[type="text"],input[type="label"]{
+    width: 80%;
+    display: block;
+    padding: 0;
+    margin: 40px 10%;
+    text-align: left;
+    font-size: 30px;
+    color: white;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid white ;
+}
+.signupform button[type="submit"]{
+    border: none;
+    background-color: #0051AD;
+    color: white;
+    box-shadow: 5px 2px 5px #003b7e;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 2%;
+}
+.closebtn{
+    color: white;
+    font-size: 30px;
+    display: inline-block;
+    padding: 10px;
+}
+.signupform input[type="text"]:focus{
+    outline: none;
+    border-bottom: 3px solid white ;
+    transition: border 0.3s ;
+}

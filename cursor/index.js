@@ -29,5 +29,3 @@ function nutterbutter(e){
     oldY = y;
 	
 } 
-toggle.style.left = "50%";
-toggle.style.top = "50%";
